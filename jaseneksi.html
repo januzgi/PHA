@@ -149,7 +149,7 @@
   <section id="maksut" class="section section-light">
     <div class="container">
       <h2 class="section-title reveal">Jäsenmaksut</h2>
-      <p class="section-subtitle reveal">Jäsenmaksut kaudelle 2026 (sisältää SAL-lisenssin)</p>
+      <p class="section-subtitle reveal">Jäsenmaksut kaudelle 2025 (sisältää SAL-lisenssin)</p>
 
       <div class="reveal" style="max-width: 800px; margin: 0 auto;">
         <table class="fee-table">
@@ -163,12 +163,12 @@
           <tbody>
             <tr>
               <td><strong>Varsinainen jäsen</strong></td>
-              <td class="price">85 &euro;/vuosi</td>
+              <td class="price">80 &euro;/vuosi</td>
               <td>Aikuiset (20 v. täyttäneet)</td>
             </tr>
             <tr>
               <td><strong>Nuorisojäsen</strong></td>
-              <td class="price">25 &euro;/vuosi</td>
+              <td class="price">40 &euro;/vuosi</td>
               <td>Alle 20-vuotiaat</td>
             </tr>
             <tr>
@@ -183,13 +183,14 @@
             </tr>
             <tr>
               <td><strong>Liittymismaksu</strong></td>
-              <td class="price">30 &euro;</td>
+              <td class="price">150 &euro;</td>
               <td>Kertaluonteinen, uusilta jäseniltä</td>
             </tr>
           </tbody>
         </table>
 
         <p class="reveal" style="margin-top: 1.5rem; font-size: 0.9rem; color: #64748b; text-align: center;">
+          Liittymismaksua ei peritä alle 20-vuotiailta seuraan liittyviltä henkilöiltä.<br>
           Jäsenmaksun voi maksaa pankkisiirrolla tai liittymislomakkeen kautta. Maksu erääntyy vuosittain tammikuussa.
         </p>
       </div>
@@ -200,64 +201,35 @@
   <section class="section section-dark-secondary">
     <div class="container">
       <h2 class="section-title section-title-light reveal">Jäsenhakemus</h2>
-      <p class="section-subtitle reveal" style="color: rgba(255,255,255,0.7);">Täytä alla oleva lomake ja otamme sinuun yhteyttä</p>
+      <p class="section-subtitle reveal" style="color: rgba(255,255,255,0.7);">Tulosta ja täytä jäsenhakemuslomake ja palauta se lajikerhon kautta seuran hallitukselle</p>
 
       <div class="reveal" style="max-width: 680px; margin: 0 auto;">
-        <form onsubmit="event.preventDefault(); alert('Tämä on demo-lomake — hakemusta ei lähetetty.');">
-          <div class="grid grid-2" style="gap: 1.5rem;">
-            <div class="form-group">
-              <label class="form-label" for="nimi" style="color: rgba(255,255,255,0.85);">Nimi *</label>
-              <input type="text" id="nimi" class="form-input" placeholder="Etunimi Sukunimi" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email" style="color: rgba(255,255,255,0.85);">Sähköposti *</label>
-              <input type="email" id="email" class="form-input" placeholder="nimi@esimerkki.fi" required>
-            </div>
-          </div>
 
-          <div class="grid grid-2" style="gap: 1.5rem;">
-            <div class="form-group">
-              <label class="form-label" for="puhelin" style="color: rgba(255,255,255,0.85);">Puhelin</label>
-              <input type="tel" id="puhelin" class="form-input" placeholder="+358 40 123 4567">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="syntymaaika" style="color: rgba(255,255,255,0.85);">Syntymäaika *</label>
-              <input type="date" id="syntymaaika" class="form-input" required>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="laji" style="color: rgba(255,255,255,0.85);">Ensisijainen laji</label>
-            <select id="laji" class="form-select">
-              <option value="">Valitse laji...</option>
-              <option value="haulikko">Haulikko</option>
-              <option value="kivaari">Kivääri</option>
-              <option value="pistooli">Pistooli</option>
-              <option value="ilma-aseet">Ilma-aseet</option>
-              <option value="metsastys">Metsästys</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="viesti" style="color: rgba(255,255,255,0.85);">Viesti</label>
-            <textarea id="viesti" class="form-textarea" placeholder="Kerro lyhyesti taustastasi ja kiinnostuksestasi ampumaurheiluun..."></textarea>
-          </div>
-
-          <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem;">
-            <input type="checkbox" id="tietosuoja" style="margin-top: 4px; width: 18px; height: 18px; accent-color: var(--blue);" required>
-            <label for="tietosuoja" style="color: rgba(255,255,255,0.75); font-size: 0.9rem; cursor: pointer;">
-              Hyväksyn <a href="#" style="color: var(--gold); text-decoration: underline;">tietosuojaselosteen</a> ja annan luvan tietojeni käsittelyyn jäsenhakemuksen yhteydessä. *
-            </label>
-          </div>
-
-          <div style="margin-top: 2rem;">
-            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Lähetä jäsenhakemus</button>
-          </div>
-
-          <p style="margin-top: 1.25rem; font-size: 0.8rem; color: rgba(255,255,255,0.45); text-align: center;">
-            Tämä on demo-sivusto. Lomaketta ei lähetetä eikä tietoja tallenneta.
+        <div style="background: rgba(255,255,255,0.08); border-radius: var(--card-radius); padding: 2rem; text-align: center;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+          </svg>
+          <h3 style="color: #fff; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.75rem;">Lataa jäsenhakemuslomake (PDF)</h3>
+          <p style="color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+            Hakemuksessa on oltava kahden PHA:n jäsenen suosittelijoiden allekirjoitukset. Täytetty lomake palautetaan lajikerhon kautta seuran hallitukselle tai postitse osoitteeseen: <strong style="color: rgba(255,255,255,0.85);">Pohjois-Hämeen Ampujat, PL 580, 33101 Tampere</strong>.
           </p>
-        </form>
+          <a href="files/jasenanomus_PHA.pdf" class="btn btn-primary" target="_blank" style="display: inline-flex;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Lataa lomake (PDF)
+          </a>
+        </div>
+
+        <div style="margin-top: 2rem; background: rgba(255,255,255,0.05); border-radius: var(--card-radius); padding: 1.5rem; border-left: 3px solid var(--gold);">
+          <h4 style="color: rgba(255,255,255,0.9); font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.75rem;">Näin liittyminen etenee</h4>
+          <ol style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.8; padding-left: 1.25rem; margin: 0;">
+            <li>Käy tutustumassa toimintaan sopivan lajikerhon radalla</li>
+            <li>Hanki kaksi suosittelijaa seuran jäsenistä</li>
+            <li>Täytä ja palauta jäsenhakemuslomake</li>
+            <li>Hallitus käsittelee hakemuksen — hyväksytystä hakemuksesta lähetetään lasku jäsen- ja liittymismaksusta</li>
+            <li>Täydet jäsenoikeudet tulevat voimaan, kun maksut on maksettu</li>
+          </ol>
+        </div>
+
       </div>
     </div>
   </section>
@@ -275,7 +247,7 @@
             Miten liityn jäseneksi?
           </summary>
           <div style="padding: 0 1.5rem 1.25rem; color: #64748b; line-height: 1.7;">
-            Täytä jäsenhakemus tällä sivulla tai ota yhteyttä seuran sihteeriin sähköpostitse. Hakemuksen käsittelyn jälkeen saat ohjeet jäsenmaksun maksamiseen. Jäsenyys astuu voimaan, kun maksu on rekisteröity.
+            Täytä jäsenhakemuslomake ja palauta se lajikerhon kautta seuran hallitukselle. Hakemuksessa on oltava kahden seuran jäsenen suosittelijoiden allekirjoitukset. Ennen liittymistä on hyvä käydä tutustumassa toimintaan sopivan lajikerhon radalla, josta saat myös suosittelijat. Hallituksen hyväksyttyä hakemuksen saat laskun jäsen- ja liittymismaksusta — täydet jäsenoikeudet tulevat voimaan, kun maksut on maksettu.
           </div>
         </details>
 
@@ -293,7 +265,7 @@
             Mikä ikäraja jäsenyydellä on?
           </summary>
           <div style="padding: 0 1.5rem 1.25rem; color: #64748b; line-height: 1.7;">
-            Seuraan voi liittyä nuorisojäsenenä jo alle 20-vuotiaana. Alle 15-vuotiailta edellytetään huoltajan suostumusta. Nuorten ampumakouluun voi osallistua 12-vuotiaasta alkaen.
+            Seuraan voi liittyä nuorisojäsenenä jo alle 20-vuotiaana. Alle 16-vuotiailta edellytetään huoltajan suostumusta. Nuorten ampumakouluun voi osallistua 12-vuotiaasta alkaen.
           </div>
         </details>
 
@@ -320,7 +292,7 @@
             Miten jäsenmaksu maksetaan?
           </summary>
           <div style="padding: 0 1.5rem 1.25rem; color: #64748b; line-height: 1.7;">
-            Jäsenmaksu maksetaan pankkisiirrolla seuran tilille. Lasku lähetetään sähköpostitse vuoden alussa. Uusilta jäseniltä peritään lisäksi kertaluonteinen liittymismaksu (30 &euro;).
+            Hallituksen hyväksyttyä jäsenhakemuksen saat laskun jäsen- ja liittymismaksusta. Jäsenmaksu maksetaan pankkisiirrolla seuran tilille. Jatkossa lasku lähetetään vuosittain vuoden alussa. Liittymismaksua (150 &euro;) ei peritä alle 20-vuotiailta.
           </div>
         </details>
 

@@ -1212,6 +1212,116 @@ h4 {
   color: #64748b;
 }
 
+/* ---------- News / Tiedotteet ---------- */
+.news-board {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: #e2e8f0;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--white);
+  transition: background var(--transition);
+}
+
+.news-item:hover {
+  background: #f8fafc;
+}
+
+.news-item-pinned {
+  background: #fffbeb;
+  border-left: 4px solid var(--gold);
+}
+
+.news-item-pinned:hover {
+  background: #fef9e0;
+}
+
+.news-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 56px;
+  padding-top: 2px;
+}
+
+.news-date-day {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--dark);
+}
+
+.news-date-month {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.news-date-year {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 1px;
+}
+
+.news-body h4 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--dark);
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+.news-body p {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.news-tag {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 0.4rem;
+}
+
+.news-tag-hallitus {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.news-tag-pk {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.news-tag-seura {
+  background: #fef3c7;
+  color: #92400e;
+}
+
 /* ---------- Partners ---------- */
 .partners-grid {
   display: grid;
@@ -1589,6 +1699,19 @@ h4 {
     width: 100%;
     max-width: 300px;
     justify-content: center;
+  }
+
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .news-date {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+  .news-date-day {
+    font-size: 1.1rem;
   }
 }
 
