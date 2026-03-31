@@ -1390,7 +1390,7 @@ h4 {
 .footer-brand p {
   font-size: 0.9rem;
   line-height: 1.6;
-  max-width: 280px;
+  max-width: 550px;
 }
 
 .footer-social {
@@ -1559,6 +1559,20 @@ h4 {
   }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .footer-grid .footer-brand {
+    grid-column: 1 / -1;
+    align-items: center;
+  }
+  .footer-grid .footer-social {
+    justify-content: center;
+  }
+  .footer-grid > div:last-child {
+    grid-column: 1 / -1;
+  }
+  .footer-grid .footer-links {
+    align-items: center;
   }
   .partners-grid {
     grid-template-columns: repeat(2, 1fr);
